@@ -598,3 +598,31 @@ ul.social-buttons {
   .btn-xl .badge {
     color: #8c1d37;
     background-color: white; }
+
+
+/*Greg's Edits*/
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: inline-block;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: none !important;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        position: fixed;
+        top: 0;
+        left: -300px;
+        height: 100%;
+        width: 300px;
+        background: white;
+        padding: 2em;
+        transition: left ease-in-out 200ms;
+    }
+    .navbar-expand-lg .navbar-collapse.show {
+        left: 0;
+    }
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+    }
+}
